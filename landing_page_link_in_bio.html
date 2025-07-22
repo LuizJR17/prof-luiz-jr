@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. Luiz Jr. | Personal & Consultoria Online</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3d0955; /* roxo da marca */
+      --secondary: #ffffff;
+      --accent: #a56bff;
+      --text-dark: #222;
+      --text-light: #f5f5f5;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+    body{background:var(--secondary);color:var(--text-dark);line-height:1.6;}
+    header{background:var(--primary);color:var(--text-light);text-align:center;padding:3rem 1.5rem;}
+    header img{width:160px;margin-bottom:1rem;}
+    header h1{font-size:1.9rem;font-weight:700;margin-bottom:.5rem;}
+    header p{font-size:1.1rem;font-weight:300;margin-bottom:1.5rem;}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:600;transition:opacity .2s ease;}
+    .btn:hover{opacity:.85;}
+
+    section{padding:3rem 1.5rem;max-width:900px;margin:0 auto;}
+    section h2{color:var(--primary);font-size:1.6rem;margin-bottom:1rem;text-align:center;}
+    section p{margin-bottom:1rem;font-size:1rem;}
+    ul.bullets{list-style:none;margin:1.5rem 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+    ul.bullets li{background:#f6f2fa;border-left:4px solid var(--primary);padding:.75rem;border-radius:6px;font-size:.95rem;}
+
+    .services{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;}
+    .service{background:#f6f2fa;border-radius:10px;padding:1.5rem;text-align:center;transition:transform .2s ease,box-shadow .2s ease;}
+    .service:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,.08);}
+    .service h3{color:var(--primary);margin-bottom:.75rem;font-size:1.2rem;}
+
+    .cta{background:var(--primary);color:var(--text-light);text-align:center;padding:2.5rem 1.5rem;border-radius:12px;}
+    .cta h2{color:#fff;margin-bottom:1rem;}
+
+    footer{background:#111;color:#ddd;text-align:center;padding:1.5rem;font-size:.9rem;}
+    @media(max-width:640px){
+      ul.bullets{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr;}
+      header h1{font-size:1.6rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Substitua o src abaixo pelo caminho/URL real da sua logo -->
+    <img src="logo-luiz-jr.jpg" alt="Logo Luiz Junior Personal Trainer" />
+    <h1>Qualidade de Vida em Primeiro Lugar</h1>
+    <p>Treinos presenciais e consultoria online baseados em evidências científicas.</p>
+    <a href="https://wa.me/5515996068080" class="btn" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </header>
+
+  <section>
+    <h2>Por que escolher o Prof. Luiz Jr.?</h2>
+    <p>Sou graduado em Educação Física e me dedico a transformar vidas por meio de treinos inteligentes, focados na saúde. Resultados estéticos vêm como consequência natural de um corpo saudável!</p>
+    <ul class="bullets">
+      <li>Metodologia 100% científica</li>
+      <li>Planos de treino totalmente personalizados</li>
+      <li>Acompanhamento próximo e motivador</li>
+      <li>Evolução mensurável de força, condicionamento e bem‑estar</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Personal Trainer Presencial</h3>
+        <p>Aulas individuais em academias parceiras ou no conforto da sua residência, com supervisão completa de execução, ajustes em tempo real e motivação constante.</p>
+      </div>
+      <div class="service">
+        <h3>Consultoria Online</h3>
+        <p>Acesso a planilhas exclusivas, vídeos explicativos e suporte semanal pelo WhatsApp. Ideal para quem busca flexibilidade sem abrir mão de orientação profissional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sobre o Prof. Luiz Jr.</h2>
+    <p>Com <strong>anos de experiência</strong> e atualização contínua em cursos e congressos, meu compromisso é entregar treinos seguros, eficientes e ajustados à sua rotina. Levo a sério cada objetivo e celebro cada conquista dos meus alunos.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Vamos começar hoje?</h2>
+    <p>Clique no botão abaixo, fale comigo no WhatsApp e receba uma avaliação gratuita!</p>
+    <a href="https://wa.me/5515996068080" class="btn" target="_blank" rel="noopener">Começar agora</a>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Prof. Luiz Jr.  |  Contato: (15) 99606‑8080
+  </footer>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
